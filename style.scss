@@ -1,0 +1,134 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .clockLabel{
+        width: 35rem;
+        height: 35rem;
+        background-color: rgb(129, 228, 195);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        [class^="h-"]{
+            padding: 12px;
+            position: absolute;
+            top: 0%;
+            height: 50%;
+            -webkit-transform-origin-y: 100%;
+            font-size: 25px;
+            font-weight: 900;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .h-1{
+            transform: rotate(30deg);
+            p{
+                transform: rotate(-30deg);
+            }
+        }
+        .h-2{
+            transform: rotate(60deg);
+            p{
+                transform: rotate(-60deg);
+            }
+        }
+        .h-3{
+            transform: rotate(90deg);
+            p{
+                transform: rotate(-90deg);
+            } 
+        }
+        .h-4{
+            transform: rotate(120deg);
+            p{
+                transform: rotate(-120deg);
+            }
+        }
+        .h-5{
+            transform: rotate(150deg);
+            p{
+                transform: rotate(-150deg);
+            }
+        }
+        .h-6{
+            transform: rotate(180deg);
+            p{
+                transform: rotate(-180deg);
+            } 
+        }
+        .h-7{
+            transform: rotate(210deg);
+            p{
+                transform: rotate(-210deg);
+            }
+        }
+        .h-8{
+            transform: rotate(240deg);
+            p{
+                transform: rotate(-240deg);
+            }
+        }
+        .h-9{
+            transform: rotate(270deg);
+            p{
+                transform: rotate(-270deg);
+            }
+        }
+        .h-10{
+            transform: rotate(300deg);
+            p{
+                transform: rotate(-300deg);
+            }
+        }
+        .h-11{
+            transform: rotate(330deg);
+            p{
+                transform: rotate(-330deg);
+            }
+        }
+        .h-12{
+            transform: rotate(360deg);
+            p{
+                transform: rotate(-360deg);
+            }
+        }
+        
+        .clockBody{
+            width: 80%;
+            height: 80%;
+            background-color:aquamarine;
+            border-radius: 100%;
+            position: relative;
+            .hand{
+                margin-top: 50%;
+                position: absolute;
+                height: 5px;
+                background-color: black;
+                transform-origin: 100%;
+                transform: rotate(90deg);
+                transition: all 0.5s cubic-bezier(0.42, 0, 0.56, 1.53);
+            }
+            .hour-hand{
+                width: 20%;
+                margin-left: 30%;
+            }
+            .minute-hand{
+                width: 30%;
+                margin-left: 20%;
+            }
+            .second-hand{
+                width: 40%;
+                margin-left: 10%;
+            }
+        }
+    }
+}
